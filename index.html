@@ -9,9 +9,11 @@
 		<meta name="description" content="Проектная работа курсантов компании DataArt 2016г">
 		<link rel="stylesheet" href="style.css">
 		<script type="text/javascript" src="js/jquery-2.2.1.js"></script>
+
 		
 	</head>
 	<body>
+	<!--Registration-->
 		<!-- <div id="registration" class="enter">
 			<h1>Idea Bank</h1>
 			<p>Добро пожаловать</p>
@@ -19,9 +21,12 @@
 				<label for="username">Логин:</label><input type="text" name="username" class="placeholder" placeholder="логин">
 				<label for="password">Пароль:</label><input type="password" name="password" class="placeholder" placeholder="пароль"> -->
 				<!-- <input type="submit" value="ВХОД" name="button_registration">    ЭТУ СТРОЧКУ ЗАКОМЕНТИТЬ!!!!!!!!!!!! -->
-			<!-- </form>
+	<!-- 		</form>
 			<button id="registration_button">ВХОД</button>
 		</div> -->
+
+
+	<!--Header-->	
 		<header>
 			<div class="container">
 				<nav>
@@ -37,7 +42,15 @@
 								<input type="text" id="search" placeholder="Поиск">
 							</form>
 						</li>
-						<li><button id="button_user">Васенька</button></li>
+						<li><button id="button_user">Васенька</button>
+							<div class="dropdown_user">
+									<ul class="dropdown_user_menu">
+						        	    <li><a href="#">Настройки</a></li>
+						            	<li><a href="#">Выйти</a></li>
+						         	</ul>
+			        		</div>
+						</li>
+
 					</ul>
 				</nav>
 				
@@ -45,11 +58,35 @@
 			
 		</header>
 
+		<!--Sorting-->
+		<div class="sorting">
+			<div class="container">
+				<div class="wrap_for_sorting">
+					<h1>Последние</h1>
+					<img src="img/arrow_down_select.png">
+					<div class="dropdown">
+						<ul class="dropdown-menu">
+			        	    <li><a href="#">Популярные</a></li>
+			            	<li><a href="#">Случайные</a></li>
+			         	</ul>
+		        	</div>
+				</div>
+				
+		        <div class="favorite">
+		        	<h2>Избранное</h2>
+		        	<span>(</span>
+		        	<div id="count_of_favorites">21</div>
+		        	<span>)</span>	
+		        </div>
+		        
+			</div>
+		</div>
 
 
 		
+		
 		<script type="text/javascript" src="js/script.js"></script>
-	
+		
 	</body>	
 
 

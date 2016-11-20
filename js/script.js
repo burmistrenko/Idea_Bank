@@ -1,10 +1,30 @@
-﻿var formRegistration = document.forms[0];
-var buttonRegistration = document.getElementById('registration_button');
-var registrationBlock = document.getElementById('registration');
+﻿var main = function() {
 
-buttonRegistration.onclick = function() {
-			registrationBlock.style.opacity = 0;
-			
-		};
+
+//registration
+	$('#registration_button').click(function() {
+	  	$('.enter').fadeOut(1700);
+	 });
+
+
+
+//User drop down menu
+
+	$('#button_user').click(function() {
+  		$('.dropdown_user_menu').toggle();
+ 	 });
+  
+
+
+//Sorting drop down menu
+
+	$('.sorting img').click(function() {
+  		$('.dropdown-menu').toggle();
+ 	 });
+  
+};
+
+
+$(document).ready(main);
 
 
