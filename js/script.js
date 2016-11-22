@@ -3,7 +3,15 @@
 
 //registration
 	$('#registration_button').click(function() {
-	  	$('.enter').fadeOut(1700);
+	  	$('.enter').animate({opacity: 0}, 500);
+	  	$('.enter').animate({top: '-120vh'}, 500);
+	  
+
+	  	/*$('.enter').animate({opacity:'0'}, 1500,   //Как-то топорно в данном случае-поэтому пусть пока сидит
+        		function(){
+                    $(this).css({display:'none'});
+                });*/
+
 	 });
 
 

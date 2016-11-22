@@ -81,16 +81,24 @@ a {
 	display: inline-block;
 }
 
+.grey_font_color {
+	color: #909090;
+}
+
 
 /*REGISTRATION*/
 .enter {
-	position: absolute;
+	position: fixed;
 	background: radial-gradient(circle farthest-side at 20vw 10vw, #006dce, #002c46);
-	width: 100%;
-	height: 100%;
+	width: 100vw;
+	height: 100vh;
 	color: #fff;
 	text-align: center;
 	z-index: 200;
+	overflow: hidden;
+	opacity: 1;
+	transition: 2s;
+
 
 }
 .enter h1 {
@@ -287,8 +295,7 @@ header {
     box-shadow:         0px 3px 15px 0px rgba(50, 50, 50, 0.3);
     line-height: 6vw;
     position: relative;
-    z-index: 2;
-    
+    z-index: 2;    
 
 }
 
@@ -359,9 +366,7 @@ input#search {
 	background-size: 1.5vw 1.5vw;
 	border: 0.2vw solid #ececec;
 	vertical-align: middle;
-	/*-webkit-box-shadow: 2px 2px 6px 0px rgba(50, 50, 50, 0.7);
-    -moz-box-shadow:    2px 2px 6px 0px rgba(50, 50, 50, 0.7);
-    box-shadow:         2px 2px 6px 0px rgba(50, 50, 50, 0.7);*/
+	
 }
 input#search:focus {
 	outline: none;
@@ -611,9 +616,7 @@ input#search:focus {
     border-radius: 0.2vw;
 }
 
-.grey_font_color {
-	color: #909090;
-}
+
 
 .camera_pic {
 	width: 1.5vw;
@@ -698,4 +701,87 @@ input#search:focus {
 
 .count_of_comments {
 	margin-left: 1vw;
+}
+
+/*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/*Pages number*/
+.switch_pages {
+	
+	
+	text-align: center;
+	height: 2vw;
+	line-height: 2vw;
+}
+.arrows_for_switch_pages {
+	margin-top: -0.4vw;
+	width: 1vw;
+	vertical-align: middle;
+	line-height: 2vw;
+}
+
+
+.arrows_for_switch_pages:hover {
+	opacity: 0.6;
+	cursor: pointer;
+}
+
+.switch_pages ul {
+	padding: 0;
+	margin-left: 1vw;
+	margin-right: 1vw;
+	display: inline-block;
+	vertical-align: middle;
+
+	
+}
+.switch_pages ul li{
+	text-decoration: none;
+	display: inline-block;
+	font-size: 1.4vw;
+	margin-right: 1vw;
+	color: #909090;
+	
+}
+
+
+.switch_pages a {
+	color: #909090;
+}
+
+.switch_pages a:hover {
+	opacity: 0.7;
+}
+
+
+.switch_pages a:active {
+	color: #2294d6;
+	border-radius: 0.2vw;
+	background-color: #ececec;
+	padding: 0.2vw;
+}
+
+
+#active {
+	color: #2294d6;
+	border-radius: 0.2vw;
+	background-color: #ececec;
+	padding: 0.2vw 0.4vw 0.2vw 0.4vw;
+}
+
+
+
+/*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/*FOOTER*/
+footer {
+	height: 7vw;
+	background-color: #ececec;
+	margin-top: 2vw;
+	text-align: center;
+	font-size: 1.2vw;
+
+}
+
+footer .logo {
+	margin-top: 1vw;
+	margin-bottom: 0.5vw;
 }
